@@ -1,0 +1,403 @@
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+    --fundo-normal-degrade: linear-gradient(to bottom right, #ffbb77, #ff8c6b, #ff6b8e);
+    --fundo-contraste-degrade: linear-gradient(to bottom right, #1a0f2e, #3a0f3a, #5a1f4a);
+    --cor-botao-normal: #CB6D43;
+    --cor-botao-hover: #ff6b8e;
+    --cor-botao-texto: #ffffff;
+    --cor-botao-sombra: rgba(0, 0, 0, 0.3);
+    --cor-botao-borda: #AA5A2F;
+    --fundo-transparente-destaque: rgba(255, 255, 255, 0.3);
+    --fundo-vidro: rgba(255, 255, 255, 0.2);
+    --fundo-vidro-borda: rgba(255, 255, 255, 0.4);
+    --acessibilidade-btn-fundo-normal: rgba(255, 134, 42, 0.7);
+    --acessibilidade-btn-borda-normal: rgba(255, 134, 42, 0.9);
+    --acessibilidade-btn-fundo-hover: rgba(255, 107, 142, 0.8);
+}
+
+/* Regras de fonte para os elementos */
+/* Para títulos e elementos de destaque */
+h1, h2, .nav-link, .botao-inicio, .formulario button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Para o corpo do texto e outros elementos */
+body, p, a, li, label {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    background: var(--fundo-normal-degrade);
+    background-attachment: fixed;
+    color: #333;
+}
+
+.texto-sombreado {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.nav-img {
+    width: 200px;
+    height: auto;
+}
+
+.titulo-com-led {
+    color: #ffffff;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        2px 2px 5px black;
+    animation: neon-blink 1.5s infinite alternate;
+}
+
+@keyframes neon-blink {
+    from {
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            2px 2px 5px black;
+        opacity: 1;
+    }
+    to {
+        text-shadow:
+            2px 2px 5px black;
+        opacity: 0.8;
+    }
+}
+
+header {
+    background: url('img/GIF.gif');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--laranja-claro);
+    padding: 2rem 5rem;
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: var(--cor-botao-texto);
+    background-color: var(--cor-botao-normal);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    margin: 0 0.5rem;
+    box-shadow: 0 4px 8px var(--cor-botao-sombra);
+    border: 1px solid var(--cor-botao-borda);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+}
+
+.nav-link:hover {
+    background-color: var(--cor-botao-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.botao-inicio {
+    width: 14em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+.inicio-fundo {
+    background-image: url('img/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-transparente-container {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background-color: var(--fundo-transparente-destaque);
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.imagem-transparente-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-logo-transparente {
+    width: 28rem;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+    color: #ffffff;
+}
+
+.destaque-img {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 5px solid var(--laranja-claro);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destaque-img:hover {
+    transform: scale(1.03);
+}
+
+.curiosidades-fundo {
+    background-color: var(--fundo-vidro);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid var(--fundo-vidro-borda);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--laranja-claro);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#galeria {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contato {
+    background-image: url('img/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    border-radius: 80px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: #CB6D43;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #ff8c6b;
+}
+
+.form-control {
+    background-color: #F1EDEF;
+    border: 1px solid #ccc;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILO DOS BOTÕES DE ACESSIBILIDADE (NORMAL) */
+.menu-acessibilidade button {
+    background-color: var(--acessibilidade-btn-fundo-normal);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid var(--acessibilidade-btn-borda-normal);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-acessibilidade button:hover {
+    background-color: var(--acessibilidade-btn-fundo-hover);
+    border: 1px solid var(--acessibilidade-btn-fundo-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+/* Modo de Alto Contraste */
+body.alto-contraste {
+    background: var(--fundo-contraste-degrade) !important;
+    color: var(--alto-contraste-texto) !important;
+}
+
+body.alto-contraste header {
+    background: url('img/GIF-alto-contraste.gif') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.alto-contraste .curiosidades-fundo {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
+    box-shadow: 0 5px 15px rgba(255, 255, 0, 0.2) !important;
+    color: var(--alto-contraste-texto) !important;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste .formulario,
+body.alto-contraste #galeria {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    color: var(--alto-contraste-texto) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.alto-contraste .nav-link {
+    color: var(--cor-botao-texto) !important;
+    background-color: var(--laranja-claro) !important;
+    border: 1px solid var(--laranja-claro) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.alto-contraste .nav-link:hover {
+    background-color: var(--cor-botao-hover) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.alto-contraste .botao-inicio {
+    background-color: var(--alto-contraste-link) !important;
+    color: var(--alto-contraste-fundo) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
+    box-shadow: none !important;
+}
+
+body.alto-contraste .botao-inicio:hover {
+    background-color: #ffff00 !important;
+}
+
+body.alto-contraste .menu-acessibilidade button {
+    background-color: rgba(255, 134, 42, 0.8) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid var(--laranja-claro) !important;
+    box-shadow: 0 2px 8px rgba(255, 134, 42, 0.6) !important;
+    color: #ffffff !important;
+}
+
+body.alto-contraste .menu-acessibilidade button:hover {
+    background-color: rgba(255, 107, 142, 0.9) !important;
+    border: 1px solid rgba(255, 107, 142, 0.9) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 10px rgba(255, 134, 42, 0.8) !important;
+}
+
+body.alto-contraste h1.titulo-com-led {
+    color: #ffffff !important;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        2px 2px 5px black !important;
+}
+
+body.alto-contraste p {
+    color: var(--alto-contraste-texto) !important;
+}
+
+body.alto-contraste .form-control {
+    background-color: #333 !important;
+    color: var(--alto-contraste-texto) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
+}
+
+body.alto-contraste .form-control::placeholder {
+    color: #ccc !important;
+}
+
+body.alto-contraste .inicio-fundo,
+body.alto-contraste #contato {
+    /* Mantém as imagens de fundo para contexto */
+}
+
+body.alto-contraste .imagem-transparente-container {
+    background-color: rgba(255, 255, 0, 0.2) !important;
+    box-shadow: 0 5px 15px rgba(255, 255, 0, 0.4) !important;
+}
+
+body.alto-contraste .imagem-transparente-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 0, 0.6) !important;
+}
+
+body.alto-contraste .img-logo-transparente {
+    border-radius: 50% !important;
+}
+
+body.alto-contraste .nav-img {
+    filter: invert(1);
+}

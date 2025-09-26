@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>The Mamas & the Papas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/Mamas-and-papas-Logo-Vector.svg-.png" class="nav-img" loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link texto-sombreado" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link texto-sombreado" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link texto-sombreado" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold texto-sombreado titulo-com-led">Conheça a banda:</h1>
+                    <img src="img/Mamas-and-papas-Logo-Vector.svg-.png" class="mb-3" width="563" height="278" loading="lazy">
+                    <a href="#the-mamas-papas" class="nav-link botao-inicio fw-semibold texto-sombreado">Quero conhecer!</a>
+                </div>
+                <div class="imagem-transparente-container">
+                    <img src="img/TRANSPARENTE.png" alt="Selo da banda" class="img-logo-transparente">
+                </div>
+            </div>
+        </section>
+
+        <section id="the-mamas-papas" class="my-5 pt-5 the-mamas-papas-section" tabindex="0" aria-label="Seção explicativa sobre a banda The Mamas & the Papas">
+            <div class="container d-flex justify-content-center">
+                <div class="col-8 curiosidades-fundo">
+                    <h2 class="texto-sombreado">Quem foi The Mamas & the Papas?</h2>
+                    <p class="p-2 texto-sombreado">The Mamas & the Papas foi um grupo vocal de folk rock dos anos 1960, formado em Los Angeles, Califórnia. A banda era composta por John Phillips, Michelle Phillips, Cass Elliot ("Mama Cass") e Denny Doherty. Eles ficaram famosos por suas harmonias vocais complexas e pela mistura de pop, folk e rock, tornando-se uma das principais vozes do movimento "hippie" e do "verão do amor" de 1967.</p>
+                    <p class="p-2 texto-sombreado">Seus maiores sucessos incluem "California Dreamin'", "Monday, Monday" e "Dedicated to the One I Love". A banda teve uma carreira breve, mas deixou um legado duradouro na música popular. Eles foram introduzidos ao Rock and Roll Hall of Fame em 1998.</p>
+                    <p class="p-2 texto-sombreado">Apesar do "Verão do Amor" e da mensagem de paz, a banda também enfrentou pressões da indústria musical, uso de substâncias e a efemeridade da fama, culminando em sua separação e no falecimento prematuro de Cass Elliot, uma voz icônica que partiu jovem demais. Curiosamente, Cass, uma das vozes mais potentes, por vezes se sentia à margem dos outros membros, algo que a perseguia nos bastidores. A história deles é um espelho multifacetado da década, com suas promessas de liberdade e seus desafios intrínsecos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="imagem-destaque-cass" class="my-5 py-5 d-flex justify-content-center" tabindex="0" aria-label="Seção de imagem de destaque da Mama Cass">
+            <div class="col-8 d-flex justify-content-center">
+                <a href="http://www.youtube.com/watch?v=ZZ0PZRYin2s" target="_blank" aria-label="Clique para assistir vídeos da Mama Cass no YouTube">
+                    <img src="img/Mama_Cass_in_1973.jpg" class="img-fluid rounded-pill destaque-img" alt="Imagem da Mama Cass em 1973" loading="lazy">
+                </a>
+            </div>
+        </section>
+
+        <section id="curiosidades" class="my-5 pt-5 the-mamas-papas-section" tabindex="0" aria-label="Seção de curiosidades sobre a banda The Mamas & the Papas">
+            <div class="container d-flex justify-content-center">
+                <div class="col-8 curiosidades-fundo">
+                    <h2 class="texto-sombreado">Curiosidades e Controvérsias da Era Hippie</h2>
+                    <p class="p-2 texto-sombreado">A vida do The Mamas & the Papas era tão vibrante quanto sua música, mas também cheia de altos e baixos, refletindo a intensidade dos anos 60. Por trás das harmonias perfeitas, havia tensões pessoais e romances complexos que alimentavam tanto a criatividade quanto os conflitos internos da banda.</p>
+                    <p class="p-2 texto-sombreado">A canção "Creeque Alley", por exemplo, narra de forma semi-autobiográfica a formação do grupo e suas dificuldades iniciais. Além disso, a relação entre Michelle e Denny, e o casamento conturbado de Michelle e John Phillips, muitas vezes se misturavam às letras e performances, tornando a experiência da banda algo profundamente pessoal e às vezes doloroso.</p>
+                    <p class="p-2 texto-sombreado">Apesar do "Verão do Amor" e da mensagem de paz, a banda também enfrentou pressões da indústria musical, uso de substâncias e a efemeridade da fama, culminando em sua separação e no falecimento prematuro de Cass Elliot, uma voz icônica que partiu jovem demais. Curiosamente, Cass, uma das vozes mais potentes, por vezes se sentia à margem dos outros membros, algo que a perseguia nos bastidores. A história deles é um espelho multifacetado da década, com suas promessas de liberdade e seus desafios intrínsecos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5 texto-sombreado">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/The_Mamas_and_the_Papas_Ed_Sullivan_Show_1968.jpg" class="img-fluid rounded-5" loading="lazy" alt="The Mamas & the Papas no Ed Sullivan Show, 1968">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/Mamas_and_Papas_1967.jpg" class="img-fluid rounded-5" loading="lazy" alt="The Mamas & the Papas em 1967">
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/1967_Mamas_and_Papas.jpg" class="img-fluid rounded-5" loading="lazy" alt="The Mamas & the Papas, imagem promocional de 1967">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/44da6cd455cecd0a562338db791123cd.jpg" class="img-fluid rounded-5" loading="lazy" alt="The Mamas & the Papas em cena">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3 texto-sombreado">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome" class="texto-sombreado">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email" class="texto-sombreado">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem" class="texto-sombreado">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill texto-sombreado">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center p-3 fst-italic">
+        <p class="texto-sombreado">Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp texto-sombreado"></i>
+        <i class="bi bi-instagram texto-sombreado"></i>
+        <i class="bi bi-tiktok texto-sombreado"></i>
+        <p class="mt-3 texto-sombreado">Uma homenagem de Evellyn 2025 para os fãs de The Mamas & the Papas.</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
